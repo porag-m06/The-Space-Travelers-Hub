@@ -16,7 +16,7 @@ function Rockets() {
   if (error) { return (<div>Something went wrong...!</div>); }
 
   return (
-    <div>
+    <div className="rockets-list">
       <ul>
         {keys.map((key) => (
           <li key={key}><RocketCard rocket={rockets[key]} /></li>

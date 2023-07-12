@@ -1,12 +1,24 @@
 .card {
-    display: flex;
-    width: 100%;
-    margin: 0 0 2rem 0;
+  display: flex;
+  width: 100%;
+  margin: 0 0 2rem 0;
 }
 
 .card img {
-    width: 13rem;
-    height: 10rem;
-    margin: 0 1.8rem 0 0;
-    
+  width: 13rem;
+  height: 10rem;
+  margin: 0 1.8rem 0 0;
+}
+
+.info h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.info p {
+  padding: 0;
+}
+
+.info button {
+  margin: 0;
 }
