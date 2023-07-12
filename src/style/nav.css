@@ -46,6 +46,11 @@
   gap: 2.563rem;
 }
 
+.nav-items span {
+  font-size: 1.6rem;
+  color: gray;
+}
+
 .nav-items li a {
   text-decoration: none;
   font-size: 1.55rem;
