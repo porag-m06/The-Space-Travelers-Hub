@@ -11,7 +11,7 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Provider store={store}>
-        <App className="Bookstore-CMS" />
+        <App />
       </Provider>
     </BrowserRouter>
   </React.StrictMode>,

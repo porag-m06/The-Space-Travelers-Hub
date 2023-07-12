@@ -1,16 +1,22 @@
 .nav-head {
-  height: 5.938rem;
+  height: 8.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #fff;
-  border-bottom: 1px solid #e8e8e8;
+}
+
+.false-nav {
+  width: 100%;
+  height: 100%;
+  margin: 0 3.6rem 0 3.7rem;
+  border-bottom: 2px solid lightgray;
 }
 
 .nav {
-  width: 100%;
+  width: 96.5%;
+  height: 100%;
+  margin: 0 0 0 1.4rem;
   display: flex;
-  margin: 0 6.188rem 0 6.25rem;
   align-items: center;
   justify-content: space-between;
 }
@@ -21,13 +27,16 @@
 }
 
 .logo img {
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 5.3rem;
+  height: 5.3rem;
 }
 
 .logo h2 {
   margin: 0;
   padding: 0 0 0 1rem;
+  font-size: 2.9rem;
+  font-weight: 500;
+  color: rgb(48, 46, 46);
 }
 
 .nav-items {
@@ -39,10 +48,10 @@
 
 .nav-items li a {
   text-decoration: none;
-  height: 1rem;
-  font-size: 0.813rem;
-  letter-spacing: 1.9px;
+  font-size: 1.55rem;
   color: #0290ff;
+  letter-spacing: -1px;
+  font-weight: 400;
 }
 
 .active {

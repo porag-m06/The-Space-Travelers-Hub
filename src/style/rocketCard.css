@@ -5,20 +5,32 @@
 }
 
 .card img {
-  width: 13rem;
-  height: 10rem;
+  width: 22.25rem;
   margin: 0 1.8rem 0 0;
 }
 
 .info h2 {
   margin: 0;
   padding: 0;
+  font-size: 1.95rem;
+  font-weight: 500;
+  color: rgb(48, 46, 46);
 }
 
 .info p {
   padding: 0;
+  font-size: 1.4rem;
+  letter-spacing: -0.5px;
+  color: rgb(59, 59, 59);
 }
 
 .info button {
   margin: 0;
+  padding: 5px 20px 5px 20px;
+  height: 3.5rem;
+  color: white;
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #0278ff;
 }
