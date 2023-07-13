@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import '../style/rocketCard.css';
 import { useDispatch } from 'react-redux';
+import { reserveRockets } from '../redux/features/rockets/rocketsSlice';
 
 function RocketCard({ rocket }) {
   const dispatch = useDispatch();
@@ -12,7 +13,7 @@ function RocketCard({ rocket }) {
       <div className="info">
         <h2>{rocket.name}</h2>
         <p>{rocket.description}</p>
-        <button type="button" onClick={() => { dispatch(); }}>Reserve Rocket</button>
+        <button type="button" onClick={() => { dispatch(reserveRockets()); }}>Reserve Rocket</button>
       </div>
     </div>
   );

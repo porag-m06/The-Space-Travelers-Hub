@@ -40,7 +40,7 @@ export const rocketsSlice = createSlice({
   },
   reducers: {
     reserveRockets: (state) => {
-      console.log('Rocket State: ', state);
+      console.log('Rocket State: ', state.rockets);
     },
   },
 
