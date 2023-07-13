@@ -13,7 +13,7 @@ function RocketCard({ rocket }) {
       <div className="info">
         <h2>{rocket.name}</h2>
         <p>{rocket.description}</p>
-        <button type="button" onClick={() => { dispatch(reserveRockets()); }}>Reserve Rocket</button>
+        <button type="button" onClick={() => { dispatch(reserveRockets(rocket.id)); }}>Reserve Rocket</button>
       </div>
     </div>
   );
