@@ -1,8 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import '../style/rocketCard.css';
+import { useDispatch } from 'react-redux';
 
 function RocketCard({ rocket }) {
+  const dispatch = useDispatch();
+
   return (
     <div className="card">
       <img src={rocket.flickr_images[0]} alt="rocket" />
