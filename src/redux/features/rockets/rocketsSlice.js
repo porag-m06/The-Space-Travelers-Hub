@@ -38,7 +38,12 @@ export const rocketsSlice = createSlice({
         state.error = action.payload;
       });
   },
+  reducers: {
+    reserveRockets: (state) => {
+      console.log('Rocket State: ', state);
+    },
+  },
 
 });
-
+export const { reserveRockets } = rocketsSlice.actions;
 export default rocketsSlice.reducer;
