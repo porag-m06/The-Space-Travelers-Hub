@@ -6,10 +6,9 @@ import '../style/rockets.css';
 
 function Rockets() {
   const { rockets, isLoading, error } = useSelector((storeState) => storeState.rockets);
-  const keys = Object.keys(rockets);
   const dispatch = useDispatch();
 
-  useEffect(() => { if (keys.length === 0) { dispatch(fetchRockets()); } },
+  useEffect(() => { if (rockets.length === 0) { dispatch(fetchRockets()); } },
     [rockets]);
 
   if (isLoading) { return (<div>Rockets are loading...</div>); }
@@ -18,8 +17,8 @@ function Rockets() {
   return (
     <div className="rockets-list">
       <ul>
-        {keys.map((key) => (
-          <li key={key}><RocketCard rocket={rockets[key]} /></li>
+        {rockets.map((rocket) => (
+          <li key={rocket.id}><RocketCard rocket={rocket} /></li>
         ))}
       </ul>
     </div>

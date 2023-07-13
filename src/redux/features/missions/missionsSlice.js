@@ -15,7 +15,7 @@ export const fetchMissions = createAsyncThunk(
   },
 );
 const initialState = {
-  missions: {},
+  missions: [],
   isLoading: false,
   error: undefined,
 };

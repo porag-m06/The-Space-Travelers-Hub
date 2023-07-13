@@ -5,11 +5,10 @@ import MissionTable from './MissionTable';
 
 function Missions() {
   const { missions, isLoading, error } = useSelector((storeState) => storeState.missions);
-  const keys = Object.keys(missions);
   const dispatch = useDispatch();
 
   useEffect(() => {
-    if (keys.length === 0) {
+    if (missions.length === 0) {
       dispatch(fetchMissions());
     }
   }, [missions]);
@@ -19,7 +18,7 @@ function Missions() {
 
   return (
     <div>
-      <MissionTable missions={missions} keys={keys} />
+      <MissionTable missions={missions} />
     </div>
   );
 }
