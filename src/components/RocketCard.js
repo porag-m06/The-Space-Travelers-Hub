@@ -6,6 +6,7 @@ import { reserveRockets } from '../redux/features/rockets/rocketsSlice';
 
 function RocketCard({ rocket }) {
   const dispatch = useDispatch();
+  // console.log('ROC: ', rocket.id, rocket);
 
   return (
     <div className="card">

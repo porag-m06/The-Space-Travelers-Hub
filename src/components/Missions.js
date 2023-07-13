@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchMissions } from '../redux/features/missions/missionsSlice';
-import MissionTable from './MissionTable';
+import '../style/missions.css';
 
 function Missions() {
   const { missions, isLoading, error } = useSelector((storeState) => storeState.missions);
@@ -18,7 +18,28 @@ function Missions() {
 
   return (
     <div>
-      <MissionTable missions={missions} />
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Mission</th>
+            <th scope="col" className="wider">Description</th>
+            <th scope="col">Status</th>
+            <th scope="col" className="emt">.</th>
+          </tr>
+        </thead>
+        <tbody>
+          {missions.map((mission) => (
+            <tr key={mission.mission_id}>
+              <th scope="row">{mission.mission_name}</th>
+              <td className="wider">{mission.description}</td>
+              <td><span className="nam">NOT A MEMBER</span></td>
+              <td>
+                <button type="button" className="red">Leave Mission</button>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 }
