@@ -54,15 +54,22 @@ button.red {
   color: var(--msn-table-lm-btn-text-color);
 }
 
-.nam {
+.member {
   margin: 1px;
   padding: 0.15rem 0.4rem;
   letter-spacing: 0.5px;
-  background-color: var(--msn-table-nam-bdg-color);
   border-radius: 5px;
   color: white;
   font-size: 1.17rem;
   font-weight: 700;
+}
+
+.yes {
+  background-color: var(--rkt-rsv-msn-am-bdg-color);
+}
+
+.no {
+  background-color: var(--msn-table-nam-bdg-color);
 }
 
 th:nth-child(3),

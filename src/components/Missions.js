@@ -1,11 +1,10 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchMissions, reserveMission } from '../redux/features/missions/missionsSlice';
+import { fetchMissions, reserveMission, leaveMission } from '../redux/features/missions/missionsSlice';
 import '../style/missions.css';
 
 function Missions() {
   const { missions, isLoading, error } = useSelector((storeState) => storeState.missions);
-  console.log("MC:",missions);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -33,17 +32,12 @@ function Missions() {
             <tr key={mission.mission_id}>
               <th scope="row">{mission.mission_name}</th>
               <td className="wider">{mission.description}</td>
-              <td><span className="nam">NOT A MEMBER</span></td>
               <td>
-                <button
-                  type="button"
-                  className=""
-                  onClick={
-                  () => { dispatch(reserveMission(mission.mission_id)); }
-                }
-                >
-                  Join Mission
-                </button>
+                {mission.reserved ? <span className="member yes">Active Member</span>
+                  : <span className="member no">NOT A MEMBER</span>}
+              </td>
+              <td>
+                {mission.reserved ? <button type="button" className="red" onClick={() => { dispatch(leaveMission(mission.mission_id)); }}>Leave Mission</button> : <button type="button" onClick={() => { dispatch(reserveMission(mission.mission_id)); }}>Join Mission</button>}
               </td>
             </tr>
           ))}

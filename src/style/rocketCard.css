@@ -34,3 +34,9 @@
   border-radius: 5px;
   background-color: var(--nav-link-rsv-rkt-btn-color);
 }
+
+button.cl {
+  color: var(--rkt-rsv-cancel-btn-text-color);
+  background: none;
+  border: 2px solid var(--rkt-rsv-cancel-btn-bdr-color);
+}

@@ -32,6 +32,14 @@ export const missionsSlice = createSlice({
       });
       return { ...state, missions: newState };
     },
+    leaveMission: (state, action) => {
+      const id = action.payload;
+      const newState = state.missions.map((mission) => {
+        if (mission.mission_id !== id) return mission;
+        return { ...mission, reserved: false };
+      });
+      return { ...state, missions: newState };
+    },
   },
   extraReducers: (builder) => {
     builder
@@ -51,5 +59,5 @@ export const missionsSlice = createSlice({
 
 });
 
-export const { reserveMission } = missionsSlice.actions;
+export const { reserveMission, leaveMission } = missionsSlice.actions;
 export default missionsSlice.reducer;
