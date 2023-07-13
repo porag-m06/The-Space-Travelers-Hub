@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import '../style/missionTable.css';
 
 function MissionTable({ missions, keys }) {
   return (
@@ -7,19 +8,21 @@ function MissionTable({ missions, keys }) {
       <table>
         <thead>
           <tr>
-            <th>Mission</th>
-            <th>Description</th>
-            <th>Status</th>
-            <th>.</th>
+            <th scope="col">Mission</th>
+            <th scope="col" className="wider">Description</th>
+            <th scope="col">Status</th>
+            <th scope="col" className="emt">.</th>
           </tr>
         </thead>
         <tbody>
           {keys.map((key) => (
             <tr key={key}>
-              <td>{missions[key].mission_name}</td>
-              <td>{missions[key].description}</td>
-              <td>status</td>
-              <td>Join</td>
+              <th scope="row">{missions[key].mission_name}</th>
+              <td className="wider">{missions[key].description}</td>
+              <td><span className="nam">NOT A MEMBER</span></td>
+              <td>
+                <button type="button" className="red">Leave Mission</button>
+              </td>
             </tr>
           ))}
         </tbody>
