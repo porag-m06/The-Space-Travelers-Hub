@@ -24,6 +24,17 @@
   color: var(--rkt-descipt-color);
 }
 
+.info span {
+  background-color: var(--rkt-rsv-msn-am-bdg-color);
+  color: white;
+  font-size: 1rem;
+  padding: 2px 6px;
+  font-weight: 500;
+  border-radius: 5px;
+  letter-spacing: 0.5px;
+  margin-right: 0.9rem;
+}
+
 .info button {
   margin: 0;
   padding: 5px 20px 5px 20px;

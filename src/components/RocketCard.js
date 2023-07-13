@@ -14,7 +14,10 @@ function RocketCard({ rocket }) {
       <img src={rocket.flickr_images[0]} alt="rocket" />
       <div className="info">
         <h2>{rocket.name}</h2>
-        <p>{rocket.description}</p>
+        <p>
+          {ifReserved && <span>Reserved</span>}
+          {rocket.description}
+        </p>
         {ifReserved ? <button type="button" className="cl" onClick={() => { dispatch(cancelRockets(rocket.id)); }}>Cancel Reservation</button>
           : <button type="button" onClick={() => { dispatch(reserveRockets(rocket.id)); }}>Reserve Rocket</button> }
 
