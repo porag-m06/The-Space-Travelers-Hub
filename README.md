@@ -35,7 +35,7 @@
   - [📝 License ](#-license-)
 
 
-# 📖 The Awesome React Bookstore<a name="about-project"></a>
+# 📖 The Space Travelers' Hub<a name="about-project"></a>
 
 Using the SpaceX API, "The Space Travelers' Hub" is a web application for an imaginary company that provides commercial and scientific space travel services. 
 
