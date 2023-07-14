@@ -11,9 +11,9 @@
 
 # 📗 Table of Contents
 
-- [ Awesome React BookStore](#about-project)
+- [ The Space Travelers' Hub](#about-project)
 - [📗 Table of Contents]
-- [📖  Awesome React BookStore](#about-project)
+- [📖  The Space Travelers' Hub](#about-project)
   - [🛠 Built With React](#-built-with-)
     - [React Instructions ](#react-stack-)
     - [Tech Stack ](#tech-stack-)
