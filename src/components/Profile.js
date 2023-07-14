@@ -8,8 +8,6 @@ function Profile() {
   const listRockets = rockets.filter((rocket) => rocket.reserved);
   const listMissions = missions.filter((mission) => mission.reserved);
 
-  console.log('List- R:', listRockets, '\nM:', listMissions);
-
   return (
     <div>
       <div className="mission-list">

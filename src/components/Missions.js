@@ -11,7 +11,7 @@ function Missions() {
     if (missions.length === 0) {
       dispatch(fetchMissions());
     }
-  }, [missions]);
+  }, [missions, dispatch]);
 
   if (isLoading) { return (<div>Rockets are loading...</div>); }
   if (error) { return (<div>Something went wrong...!</div>); }

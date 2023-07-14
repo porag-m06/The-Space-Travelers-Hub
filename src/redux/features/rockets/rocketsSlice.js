@@ -49,7 +49,6 @@ export const rocketsSlice = createSlice({
       .addCase(fetchRockets.fulfilled, (state, action) => {
         state.isLoading = false;
         state.rockets = action.payload;
-        console.log('Fullfilled with rockets: ', state.rockets);
       })
       .addCase(fetchRockets.rejected, (state, action) => {
         state.isLoading = false;

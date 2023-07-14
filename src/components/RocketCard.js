@@ -7,7 +7,6 @@ import { reserveRockets, cancelRockets } from '../redux/features/rockets/rockets
 function RocketCard({ rocket }) {
   const dispatch = useDispatch();
   const ifReserved = rocket.reserved || false;
-  console.log('Is Reserved: ', ifReserved);
 
   return (
     <div className="card">

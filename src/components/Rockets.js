@@ -9,7 +9,7 @@ function Rockets() {
   const dispatch = useDispatch();
 
   useEffect(() => { if (rockets.length === 0) { dispatch(fetchRockets()); } },
-    [rockets]);
+    [rockets, dispatch]);
 
   if (isLoading) { return (<div>Rockets are loading...</div>); }
   if (error) { return (<div>Something went wrong...!</div>); }

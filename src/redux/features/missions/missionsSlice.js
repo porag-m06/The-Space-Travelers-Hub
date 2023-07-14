@@ -49,7 +49,6 @@ export const missionsSlice = createSlice({
       .addCase(fetchMissions.fulfilled, (state, action) => {
         state.isLoading = false;
         state.missions = action.payload;
-        console.log('Fullfilled with missions: ', state.missions);
       })
       .addCase(fetchMissions.rejected, (state, action) => {
         state.isLoading = false;
