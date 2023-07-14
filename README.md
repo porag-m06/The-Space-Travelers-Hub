@@ -4,11 +4,8 @@
 <div align="center">
   <img src="./porag-logo.png" alt="logo" width="140"  height="auto" />
   <br/>
-  <h3><b>The Awesome React Bookstore</b></h3>
-  <h5>"The Awesome React BookStore" is a website build using REACT &amp; REDUX in context of a real app (with two subpages:  __/books &amp; __/categories) that allows to:  
-  1. Display a list of books
-  2. Add a book  
-  3. Remove a selected book.<h5>
+  <h3><b>The-Space-Travelers-Hub</b></h3>
+  <h5>Using the SpaceX API, The Space Travelers' Hub is a web application for an imaginary company that provides commercial and scientific space travel services. Consisting of Rockets, Missions, and a My Profile section, this application allows users to book rockets and join selected space missions.<h5>
 </div>
 
 
@@ -40,10 +37,22 @@
 
 # 📖 The Awesome React Bookstore<a name="about-project"></a>
 
-"The Awesome React Bookstore" is a website build using REACT &amp; REDUX in context of a real app (with two subpages:  __/books &amp; __/categories) that allows to:  
-  1. Display a list of books
-  2. Add a book  
-  3. Remove a selected book.
+Using the SpaceX API, "The Space Travelers' Hub" is a web application for an imaginary company that provides commercial and scientific space travel services. 
+
+Consisting of Rockets, Missions, and a My Profile section, this application allows users to:  
+  1. Reserve/ Cancel Rockets fetched from the SpaceX API.
+  2. Reserve/ Cancel Missions fetched from the SpaceX API.  
+  3. See All the selected Rockets & Missions in the My Profile Section.
+#### Rockets
+ <img src="./src/assets/space-travelers__rockets.png" alt="rockets-section" width="700px"/>
+
+#### Missions
+ <img src="./src/assets/space-travelers__missions.png" alt="rockets-section" width="auto"  height="auto" />
+
+#### My Profile
+ <img src="./src/assets/space-travelers__my-profile.png" alt="rockets-section" width="auto"  height="auto" />
+ 
+
 
 ## 🛠 Built With React<a name="built-with"></a>
 
@@ -102,7 +111,7 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 <details>
   <summary>Server</summary>
   <ul>
-    <li>Will be Deployed Using GitHub Pages</li>
+    <li>Can be deployed using Render or similar cloud services.</li>
   </ul>
 </details>
 
@@ -114,11 +123,10 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 </details>
 
 ### Key Features <a name="key-features"></a>
-- **React Basics**
 - **Use of React Components**
 - **Use of Events**
 - **Use of API to fetch data**
-- **Use of React Redux**
+- **Use of React Redux (e.g store, reducers, actions)**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -126,7 +134,7 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 > Please follow the link for a live demo.
-- [Porag's Awesome React Bookstore(Will be deployed soon...)](#)
+- [The Space Travelers' Hub](https://space-traveler-hub-4dg6.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -217,7 +225,7 @@ For more on Stylelint & autocorrent options, click [here](https://stylelint.io/u
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/porag-m06/PoragS-Awesome-React-BookStore/issues).
+Feel free to check the [issues page](https://github.com/porag-m06/The-Space-Travelers-Hub/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
