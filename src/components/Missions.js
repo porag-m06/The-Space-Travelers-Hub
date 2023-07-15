@@ -13,7 +13,7 @@ function Missions() {
     }
   }, [missions, dispatch]);
 
-  if (isLoading) { return (<div>Rockets are loading...</div>); }
+  if (isLoading) { return (<div>Missions are loading...</div>); }
   if (error) { return (<div>Something went wrong...!</div>); }
 
   return (
