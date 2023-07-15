@@ -3,9 +3,8 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import { Provider } from 'react-redux';
 import configureStore from 'redux-mock-store';
-import Rockets from '../components/Rockets';
 import thunk from 'redux-thunk';
-
+import Rockets from '../components/Rockets';
 
 const middlewares = [thunk];
 const mockStore = configureStore(middlewares);
@@ -58,8 +57,12 @@ describe('Rockets', () => {
     store = mockStore({
       rockets: {
         rockets: [
-          { id: '1', name: 'Falcon 1', description: 'Description',flickr_images: ['https://image.jpg'], },
-          { id: '2', name: 'Falcon Heavy', description: 'Description', flickr_images: ['https://image.jpg'], },
+          {
+            id: '1', name: 'Falcon 1', description: 'Description', flickr_images: ['https://image.jpg'],
+          },
+          {
+            id: '2', name: 'Falcon Heavy', description: 'Description', flickr_images: ['https://image.jpg'],
+          },
         ],
         isLoading: false,
         error: undefined,
@@ -73,7 +76,4 @@ describe('Rockets', () => {
     expect(screen.getByText('Falcon 1')).toBeInTheDocument();
     expect(screen.getByText('Falcon Heavy')).toBeInTheDocument();
   });
-
 });
-
-
